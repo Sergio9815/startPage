@@ -38,7 +38,7 @@ select
 select option
 {
 	background-color: #18181c;
-	color: #ecf0c1;
+	color: #7fd4ff;
 }
 
 select:focus {
@@ -57,9 +57,14 @@ select:focus {
 
 #time { font-size: 78px; } /* The clock */
 #date { font-size: 24px; } /* The date */
-#temperature { font-size: 34px; } /* The temperature */
-#weather-condition { font-size: 24px; }
-#city{ font-size: 16px; } /* The city whose weather is being displayed */
+#city a{ 
+	font-size: 16px; 
+	color: white;
+} /* The city whose weather is being displayed */
+
+.fa-heart {
+	font-size: 13px;
+}
 
 select:hover, #city:hover
 {
@@ -76,7 +81,6 @@ select:hover, #city:hover
 	padding: 12px 20px;
 	transition: 0.15s;
 }
-
 
 /* The container... which has all the things of the page inside it */
 #container
