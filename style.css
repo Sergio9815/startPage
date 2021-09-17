@@ -37,8 +37,12 @@ select
 
 select option
 {
-	background-color: #444;
-	color: #eee;
+	background-color: #18181c;
+	color: #ecf0c1;
+}
+
+select:focus {
+  outline: none;
 }
 
 /* The div located in the upper-right part of the page */
@@ -79,7 +83,7 @@ select:hover, #city:hover
 {
 	width: 60%;
 	margin: auto;
-	margin-top: 13%;
+	margin-top: 10%;
 }
 
 #button-container {
@@ -137,7 +141,7 @@ select:hover, #city:hover
 	}
 }
 
-@media screen and (max-width: 550px)
+@media screen and (max-width: 655px)
 {
 	#container
 	{
@@ -148,7 +152,10 @@ select:hover, #city:hover
 		margin-top: 20%;
 	}
 	#searchbar { width: 90%; }
-	#time { display: block; }
+	#time { 
+		display: block;
+		text-align: center; 
+	}
 	#button-container { 
 		width: 90%; 
 		display: flex; 
