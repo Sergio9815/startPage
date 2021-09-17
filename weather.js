@@ -33,25 +33,23 @@ window.onload = function()
 
 // user_requested is FALSE if the function is called by the page itself
 // If the user calls this function to change his/her preferred city, then user_requested is TRUE
-function refreshWeather(user_requested)
+function refreshWeather()
 {
-    if(Storage)
-    {
-        if(localStorage.cityname && !user_requested);
-        else
-            localStorage.cityname = prompt("Enter your city");
+        // if(localStorage.cityname && !user_requested);
+        // else
+        //     localStorage.cityname = prompt("Enter your city");
         
-        const city = localStorage.cityname;
+        const city = 'Panama';
 
         updateCity(city)
             .then(data => updateUI(data))
             .catch(err =>
             {
-                alert('Please enter a valid city name');
-                localStorage.cityname = prompt("Enter your city");
-                refreshWeather(0);
+                // alert('Please enter a valid city name');
+                // localStorage.cityname = prompt("Enter your city");
+                refreshWeather();
             });
-    }
+    
 }
 
 let updateCity = async (city) =>
