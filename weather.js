@@ -24,12 +24,12 @@ const getWeather = async(id) =>
 }
 
 
-window.onload = function()
-{
-    // Use this function only if the device is connected to the internet
-    if(window.navigator.onLine)
-        refreshWeather();
-}
+// window.onload = function()
+// {
+//     // Use this function only if the device is connected to the internet
+//     if(window.navigator.onLine)
+//         refreshWeather();
+// }
 
 // user_requested is FALSE if the function is called by the page itself
 // If the user calls this function to change his/her preferred city, then user_requested is TRUE
