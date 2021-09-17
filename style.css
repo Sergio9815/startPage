@@ -86,6 +86,47 @@ select:hover, #city:hover
 	width: 450px;
 }
 
+
+.fa-reddit {
+	color: #FFC996;
+}
+
+.fa-youtube {
+	color: #F56A79;
+}
+
+.fa-pencil-alt {
+	color: #ecf0c1;
+}
+
+.fa-laptop-code {
+	color: #ACFFAD;
+}
+
+.fa-at {
+	color: #7fd4ff;
+}
+
+.fa-flipboard {
+	color: #F56A79;
+}
+
+.fa-invision {
+	color: #7fd4ff;
+}
+
+.fa-google-drive {
+	color: #ACFFAD;
+}
+
+.fa-whatsapp {
+	color: #71EFA3;
+}
+
+.fa-twitch {
+	color: #C1B3FF;
+}
+
 /* CSS which will be applied when a specific condition is fulfilled */
 @media screen and (max-width: 1000px)
 {
