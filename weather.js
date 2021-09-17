@@ -28,7 +28,7 @@ window.onload = function()
 {
     // Use this function only if the device is connected to the internet
     if(window.navigator.onLine)
-        refreshWeather(0);
+        refreshWeather();
 }
 
 // user_requested is FALSE if the function is called by the page itself
