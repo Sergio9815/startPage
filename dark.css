@@ -11,10 +11,15 @@ button:hover a i { color: white; }
 
 select { color: #eee; }
 
-#searchbar { background-color: rgba(255,255,255,0.8); }
+#searchbar { 
+	background-color: rgba(255, 255, 255, 0.938); 
+	border-bottom: 4px solid #7fd4ff;
+}
+
 #searchbar:hover
 {
 	background-color: #eee;
 	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	border-bottom: 4px solid #C1B3FF;
 }
 #searchbar:focus { background-color: #fff; }
