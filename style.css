@@ -1,11 +1,9 @@
 *
 {
-	font-family: 'Poppins', arial, roboto;
+	font-family: 'Poppins', arial, roboto, 'FontAwesome', 'IcoFont';
 	outline: none;
 	line-height: 1.2em; 
 }
-
-
 
 p { margin: 0; }
 
