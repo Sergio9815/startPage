@@ -24,7 +24,7 @@ function datetime()
 	if(mm<10) mm = '0' + mm;
 
 	document.getElementById('time').innerHTML = hrs+':'+mins+':'+sec+' ';
-	document.getElementById('date').innerHTML = '&#xefb8; '+days[day]+', '+dd+'.'+mm+'.'+yy;
+	document.getElementById('date').innerHTML = '&#xefb8; '+days[day]+', '+dd+'~'+mm+'~'+yy;
 	setTimeout(datetime, 1000);
 }
 
