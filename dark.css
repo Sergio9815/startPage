@@ -1,7 +1,7 @@
 body
 {
 	background-color: #161616;
-	color: #eee;
+	color: rgb(252, 243, 243);
 }
 
 button:hover { text-shadow: 0 5px 10px rgba(255,255,255,0.2); }
