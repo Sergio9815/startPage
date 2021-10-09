@@ -114,7 +114,7 @@ select:hover, #city:hover
 }
 
 .fa-pencil-alt {
-	color: #ecf0c1;
+	color: #FFEDA3;
 }
 
 .fa-laptop-code {
@@ -135,6 +135,10 @@ select:hover, #city:hover
 
 .fa-google-drive {
 	color: #ACFFAD;
+}
+
+.fa-cloud {
+	color: #64C4ED;
 }
 
 .fa-whatsapp {
