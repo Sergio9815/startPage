@@ -53,8 +53,12 @@ select:focus {
 	font-size: 16px;
 }
 
-#time { font-size: 78px; } /* The clock */
-#date { font-size: 24px; } /* The date */
+/* The clock */
+#hours, #seconds { 
+	font-size: 78px; 
+	margin-right: -4px;
+} 
+#date, #day { font-size: 24px; } /* The date */
 #city a{ 
 	font-size: 16px; 
 	color: white;
@@ -105,6 +109,11 @@ select:hover, #city:hover
 	width: 450px;
 }
 
+#button-container-2 {
+	display: none;
+	width: 450px;
+}
+
 .fa-reddit {
 	color: #FFC996;
 }
@@ -149,6 +158,18 @@ select:hover, #city:hover
 	color: #C1B3FF;
 }
 
+.fa-language {
+	color: #64C4ED;
+}
+
+.fa-theater-masks {
+	color: #71EFA3;
+}
+
+.fa-superpowers {
+	color: #C1B3FF;
+}
+
 /* CSS which will be applied when a specific condition is fulfilled */
 @media screen and (max-width: 1000px)
 {
@@ -167,14 +188,15 @@ select:hover, #city:hover
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-top: 20%;
+		margin-top: 35%;
 	}
 	.search { width: 90%; }
 	#searchbar { width: 90%; }
-	#time { 
+	#hours { 
 		display: block;
 		text-align: center; 
 	}
+	#seconds { display: none; }
 	#button-container { 
 		width: 90%; 
 		display: flex; 
@@ -182,4 +204,21 @@ select:hover, #city:hover
 		align-items: center;
 		justify-content: center;
 	}
+}
+
+
+@media screen and (max-width: 540px)
+{
+	#button-container { 
+		display: none;
+	}
+	#container { margin-top: 45%; }
+	#button-container-2 { 
+		width: 90%; 
+		display: flex; 
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	#day { display: none; }
 }

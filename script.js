@@ -23,8 +23,10 @@ function datetime()
 	if(dd<10) dd = '0' + dd;
 	if(mm<10) mm = '0' + mm;
 
-	document.getElementById('time').innerHTML = hrs+':'+mins+':'+sec+' ';
-	document.getElementById('date').innerHTML = '&#xefb8; '+days[day]+', '+dd+'~'+mm+'~'+yy;
+	document.getElementById('hours').innerHTML = hrs+':'+mins;
+	document.getElementById('seconds').innerHTML = ':'+sec+' ';
+	document.getElementById('day').innerHTML = '&#xefb8; '+days[day]+',';
+	document.getElementById('date').innerHTML = ''+dd+'~'+mm+'~'+yy;
 	setTimeout(datetime, 1000);
 }
 
