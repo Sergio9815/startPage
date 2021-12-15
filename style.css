@@ -64,7 +64,12 @@ select:focus {
 } /* The city whose weather is being displayed */
 
 .fa-heart {
-	font-size: 13px;
+	width: 12px;
+}
+
+.fa-heart:hover {
+	color: #f26d8c;
+	cursor: default;
 }
 
 select:hover, #city:hover
@@ -93,6 +98,14 @@ select:hover, #city:hover
 }
 
 .btn-search {
+	color: #a5a5a5;
+}
+
+.fa-search {
+	width: 16px;
+}
+
+.fa-search:hover {
 	color: #a5a5a5;
 }
 
