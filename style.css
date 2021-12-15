@@ -18,13 +18,10 @@ button
 	font-size: 14px;
 }
 
-button:hover
-{
+button:hover, svg:hover {
 	transform: translateY(-3px);
 	cursor: pointer;
 }
-
-button a i { font-size: 32px !IMPORTANT; }
 
 select
 {
@@ -62,6 +59,8 @@ select:focus {
 #city a{ 
 	font-size: 16px; 
 	color: white;
+	margin: 0;
+	padding: 0;
 } /* The city whose weather is being displayed */
 
 .fa-heart {
@@ -107,11 +106,29 @@ select:hover, #city:hover
 
 #button-container {
 	width: 450px;
+	display: flex; 
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
 }
 
 #button-container-2 {
 	display: none;
 	width: 450px;
+}
+
+a {
+	margin: 12px;
+	padding: 1px 6px;
+}
+
+svg {
+	width: 32px;
+}
+
+svg:hover{
+	color: #fff;
+	transition: 0.15s;
 }
 
 .fa-reddit {
@@ -120,14 +137,17 @@ select:hover, #city:hover
 
 .fa-youtube {
 	color: #F56A79;
+	width: 35px;
 }
 
 .fa-sticky-note {
 	color: #FFEDA3;
+	width: 26px;
 }
 
 .fa-chalkboard-teacher {
 	color: #ACFFAD;
+	width: 35px;
 }
 
 .fa-at {
@@ -136,10 +156,12 @@ select:hover, #city:hover
 
 .fa-figma {
 	color: #f26d8c;
+	width: 24px;
 }
 
 .fa-amazon {
 	color: #FFEDA3;
+	width: 28px;
 }
 
 .fa-google-drive {
@@ -148,6 +170,7 @@ select:hover, #city:hover
 
 .fa-trello {
 	color: #64C4ED;
+	width: 27px;
 }
 
 .fa-whatsapp {
@@ -158,15 +181,22 @@ select:hover, #city:hover
 	color: #C1B3FF;
 }
 
+.fa-github {
+	color: #fff;
+}
+
 .fa-language {
 	color: #64C4ED;
+	width: 40px;
 }
 
 .fa-theater-masks {
 	color: #71EFA3;
+	width: 40px;
 }
 
 .fa-superpowers {
+	width: 30px;
 	color: #C1B3FF;
 }
 
@@ -199,9 +229,6 @@ select:hover, #city:hover
 	#seconds { display: none; }
 	#button-container { 
 		width: 90%; 
-		display: flex; 
-		flex-wrap: wrap;
-		align-items: center;
 		justify-content: center;
 	}
 }
